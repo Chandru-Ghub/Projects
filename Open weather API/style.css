@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    height: 100vh;
+    background-size: cover;
+}
+.tit{
+    color: white;
+    >h1{
+       margin-left: 2%;
+       padding: 10px;
+    }
+}
+.head{
+display: flex;
+height: 80vh;
+align-items: center;
+justify-content: center;
+}
+.dp{
+    background-color:black;
+    padding: 30px;
+    border-radius: 20px;
+    width: 30%;
+    opacity: .8;
+}
+#submit{
+    display: flex;
+    gap: 0px;
+    width: 100%
+}
+#inputdata{
+    width:80%;
+    height: 50px;
+    /* border-radius: 20px; */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: none;
+    padding-left: 25px;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    text-decoration: none;
+}
+#inputdata::placeholder{
+    font-size: 20px;
+}
+#btn{
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: none;
+   background-color: rgb(184, 180, 180);
+   color: white;
+   font-size: 20px;
+}
+.name{
+  font-size: 20px;
+  color: gray;
+
+
+}
+.lat,.lon{
+color: white;
+font-size: 15px;
+display: inline;
+
+/* background-color: rgba(19, 22, 22, 0.458);
+border-radius: 10px; */
+
+}
+.lon{
+    margin-left: 0px;
+}
+
+.temp{
+
+}
+.img{
+    /* background-color: aqua; */
+    text-align: center;
+   
+}
+.icon{
+  width: 180px;
+  height: 180px;
+  margin: auto;
+ 
+}
+.temperature{
+    /* background-color: red; */
+    text-align: center;
+}
+.temp{
+    font-size: 80px;
+    color: rgb(58, 198, 245);
+}
+.place{
+    /* background-color: green; */
+    text-align: center;
+    
+}
+.name{
+    font-size: 40px;
+    color: white;
+}
+.con{
+    >.description{
+        font-size: 25px;
+        color: rgb(58, 198, 245);
+    }
+}
+.content{
+    >.main{
+        font-size: 25px;
+        color: white;
+    }
+}
+.hum,.speed{
+    font-size: 15px;
+    color: white;
+}
+.container{
+   
+}
+
+.temprature{
+    color:rgb(226, 248, 100);
+}
+.weather,.container{
+    display: none;
+}
+.error{
+    color: white;
+}
+#red{
+    color: red;
+    font-size: 20px;
+}
+

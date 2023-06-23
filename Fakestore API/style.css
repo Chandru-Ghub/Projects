@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pimg{
+    max-width: 100px;
+    height: auto;
+    
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.inner-container{
+    width: 400px;
+    height: auto;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+.bgimage{
+    width: 80%;
+    height: 400px;
+}
