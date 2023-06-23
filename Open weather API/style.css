@@ -64,6 +64,10 @@ justify-content: center;
    color: white;
    font-size: 20px;
 }
+#btn:active{
+    transform: scale(.98);
+    background-color:rgb(58, 198, 245);
+}
 .name{
   font-size: 20px;
   color: gray;
