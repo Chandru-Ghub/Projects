@@ -15,6 +15,8 @@ body{
     >h1{
        margin-left: 2%;
        padding: 10px;
+       margin-bottom: 30px;
+       
     }
 }
 .head{
@@ -27,7 +29,7 @@ justify-content: center;
     background-color:black;
     padding: 30px;
     border-radius: 20px;
-    width: 30%;
+    min-width: 28%;
     opacity: .8;
 }
 #submit{
@@ -81,17 +83,15 @@ border-radius: 10px; */
     margin-left: 0px;
 }
 
-.temp{
 
-}
 .img{
     /* background-color: aqua; */
     text-align: center;
    
 }
 .icon{
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
   margin: auto;
  
 }
@@ -100,7 +100,7 @@ border-radius: 10px; */
     text-align: center;
 }
 .temp{
-    font-size: 80px;
+    font-size: 50px;
     color: rgb(58, 198, 245);
 }
 .place{
@@ -151,4 +151,16 @@ border-radius: 10px; */
  margin-top: 40px;
  font-weight: 600px;
  font-size: 15px;
+ background-color: rgba(0, 0, 0, 0.521);
+}
+@media screen and (max-width:500px) {
+    body{
+    width: 300px;
+    margin: auto;
+    }
+    h1{
+        font-size: 25px;
+        margin: auto;
+      
+    }
 }
