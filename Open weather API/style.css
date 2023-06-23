@@ -145,4 +145,10 @@ border-radius: 10px; */
     color: red;
     font-size: 20px;
 }
-
+.footer{
+ color: white;
+ text-align: center;
+ margin-top: 40px;
+ font-weight: 600px;
+ font-size: 15px;
+}
