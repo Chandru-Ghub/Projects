@@ -31,10 +31,8 @@ function renderdata(rawfile){
     }
     document.querySelector('.error').style.display='none'
     let card = document.querySelector('.container')
-    console.log(rawfile.coord.lat)
     weatherDetail = `
                 <span class = 'bck'>   
-                    <div class="locerror"></div>
                     <p class="lat">lat: ${rawfile.coord.lat}/</p>
                     <p class="lon">lon: ${rawfile.coord.lon}</p>
                     <p class="hum">humidity: ${rawfile.main.humidity}%</p>
