@@ -2,6 +2,7 @@ function initAPP(){
 const apiKey = 'ebd3f17fb8cc2328925eeec13a25afe9';
 const search = document.querySelector('#inputdata');
 const submit = document.querySelector('#submit');
+const error = document.querySelector('.locerror');
 
 submit.addEventListener('submit',(()=>{
     event.preventDefault();
@@ -14,21 +15,26 @@ submit.addEventListener('submit',(()=>{
 function fetchApi(city){
 
   
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
-    .then((data)=>data.json()).then((weatherData)=>{
-     
-        renderdata(weatherData); 
-    console.log(weatherData)}).catch((error)=>(error));
-      }
+   let a =  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+    .then((data)=>data.json()).then((weatherData)=>{console.log(weatherData)
+       
+    renderdata(weatherData)}).catch((error)=>(console.log(error)));
+      
 }
 
 
 
 
 function renderdata(rawfile){
+    // console.log(rawfile);
+    error.innerHTML = '';
+    if(rawfile.cod =='404'){
+        console.log('hi');
+        error.innerHTML = 'invalid city name!'
+    }
     document.querySelector('.error').style.display='none'
     let card = document.querySelector('.container')
-    console.log(rawfile.coord.lat)
+    // console.log(rawfile.coord.lat)
     weatherDetail = `
                 <span class = 'bck'>       
                     <p class="lat">lat: ${rawfile.coord.lat}/</p>
@@ -69,5 +75,5 @@ function renderdata(rawfile){
        
     
 }
-
+}
 initAPP()

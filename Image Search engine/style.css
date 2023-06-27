@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 40px;
+  margin: 30px 10px;
+}
+img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+   
+}
+.more{
+    display: none;
+}
