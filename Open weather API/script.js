@@ -9,8 +9,6 @@ submit.addEventListener('submit',(()=>{
 }))
 
 
-
-
 function fetchApi(city){
 
   
@@ -18,7 +16,7 @@ function fetchApi(city){
     .then((data)=>data.json()).then((weatherData)=>{
        
     renderdata(weatherData)}).catch((error)=>(console.log(error)));
-      
+
 }
 
 
