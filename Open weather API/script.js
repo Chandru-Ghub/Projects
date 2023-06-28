@@ -12,7 +12,7 @@ submit.addEventListener('submit',(()=>{
 function fetchApi(city){
 
   
-   let a =  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+   let a =  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
     .then((data)=>data.json()).then((weatherData)=>{
        
     renderdata(weatherData)}).catch((error)=>(console.log(error)));
